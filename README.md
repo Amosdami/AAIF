@@ -19,7 +19,7 @@ Open a command prompt or terminal in the project directory and run:
 
 `pip install langchain sqlite3 fastapi uvicorn requests`
 
-#3. Running the Agent:
+# 3. Running the Agent:
 
 `uvicorn langchain_agent:app --host 0.0.0.0 --port 8000`
 
