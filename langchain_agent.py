@@ -41,7 +41,7 @@ async def handle_query(query: str = Body(...)):
         return {"results": results}
     elif intent == 'api_call':
         # Example using RESTful API
-        api_url = "https://restful-api.dev/some/endpoint"  # Replace with desired API
+        api_url = "https://aaif.vercel.app/query"  # Replace with desired API
         api_response = call_restful_api(api_url)
         return {"api_response": api_response}
     else:
