@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "builds": [{ "src": "langchain_agent.py", "use": "@vercel/python" }],
-  "framework": { "name": "python" }
+  "builds": [{ "src": "langchain_agent.py", "use": "@vercel/python" }]
 }
