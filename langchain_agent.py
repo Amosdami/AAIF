@@ -4,6 +4,16 @@ from fastapi import FastAPI, Body
 
 app = FastAPI()
 
+
+# Function to return "Hello world" JSON
+def hello_world():
+    return {"message": "Hello world"}
+
+# Route for the homepage (/)
+@app.get("/")
+async def root():
+    return hello_world()
+
 # Database interaction with Northwind
 def query_northwind(query):
     conn = sqlite3.connect('northwind.db')  # Assuming downloaded and placed in the same directory
